@@ -1,0 +1,205 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: rgb(138, 196, 201);
+}
+
+.workspace_notes {
+    background-color: rgb(138, 196, 201);
+    height: calc(100vh - 86px);
+    width: 100vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.workspace_notes .box {
+    box-sizing: border-box;
+    padding-top: 32px;
+    padding-left: 15px;
+    padding-right: 5px;
+    height: 250px;
+    width: 250px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(22, 22, 22, 0.889);
+    border-radius: 3px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.workspace_notes .box>.box-text {
+    color: rgba(22, 22, 22, 0.889);
+    font-size: 16px;
+    outline: 0;
+    outline-offset: 0;
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+    padding-right: 10px;
+    resize: none;
+    text-overflow: ellipsis;
+    width: 225px;
+    height: 210px;
+}
+
+.workspace_notes .box>.box-text::placeholder {
+    color: rgba(22, 22, 22, 0.889);
+    font-size: 16px;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.workspace_notes .box>.box-text::-webkit-scrollbar {
+    width: 4px;
+}
+
+.workspace_notes .box>.box-text::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.workspace_notes .box>.box-text::-webkit-scrollbar-thumb {
+    background-color: rgba(22, 22, 22, 0.889);
+    border-radius: 2px;
+}
+
+
+.add {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    bottom: 45px;
+    right: 50%;
+    -moz-transform: translateX(120%);
+    -webkit-transform: translateX(120%);
+    -o-transform: translateX(120%);
+    -ms-transform: translateX(120%);
+    transform: translateX(120%);
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(61, 57, 57, 0.889);
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.remove {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    bottom: 45px;
+    left: 50%;
+    -moz-transform: translateX(-120%);
+    -webkit-transform: translateX(-120%);
+    -o-transform: translateX(-120%);
+    -ms-transform: translateX(-120%);
+    transform: translateX(-120%);
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(61, 57, 57, 0.889);
+    border-radius: 100%;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 15px;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.remove:hover {
+    border-color: #fff;
+    color: rgba(61, 57, 57, 0.889);
+}
+
+.add:hover {
+    border-color: #fff;
+    color: rgba(61, 57, 57, 0.889);
+}
+
+.header {
+    box-sizing: border-box;
+    padding-top: 13px;
+    height: 65px;
+    background-color: rgba(22, 22, 22, 0.889);
+    width: 100%;
+}
+
+.header>.container {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.header .clear-all {
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    font-size: 17px;
+    width: 110px;
+    height: 40px;
+    border: 1px solid rgb(138, 196, 201);
+    border-radius: 2px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.header .clear-all:hover {
+    border-color: #fff;
+    color: rgb(138, 196, 201);
+}
+
+a,
+button,
+div,
+h1,
+h2,
+h3,
+input,
+li,
+p,
+select,
+span,
+textarea {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
